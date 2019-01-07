@@ -1,0 +1,23 @@
+
+/*HOME*/
+.home-hero{
+	background-size: cover;
+	background-position: center;
+	height: 65vh;
+}
+.school-menu-card>div:hover{
+	background-color: #9B2437;
+}
+.school-menu-text-title{	
+}
+.school-menu-text-boody{	
+}
+.school-menu-text-age{
+	display: block;
+}
+.school-menu-text-age>h1{
+	display: inline-block;
+}
+.school-menu-text-age>sup{
+	top: -1.5em;
+}
