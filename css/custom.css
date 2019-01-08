@@ -5,10 +5,12 @@
 	background-position: center;
 	height: 65vh;
 }
-.school-menu-card>div:hover{
+.school-menu-card>div:hover {
 	background-color: #9B2437;
+	color: white ;
 }
-.school-menu-text-title{	
+.school-menu-text-title:hover{
+	
 }
 .school-menu-text-boody{	
 }
@@ -20,4 +22,39 @@
 }
 .school-menu-text-age>sup{
 	top: -1.5em;
+}
+.welcome-message-container{
+	height: 100vh;
+    width: 80vw;
+    background-color: #F9F3F3;
+    position: absolute;
+    right: 0;
+
+}
+.home-calendar{
+	background-color: #9B2437;
+    height: 60vh;
+    position: relative;
+    width: 30%;
+	margin-top: -300px;
+}
+.home-head{
+	background-size: cover;
+    height: 55vh;
+    width: 50vw;
+    position: relative;
+	margin-top: 100px;
+	margin-left: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	z-index: 1000;
+}
+.message-box{
+	width: 40vw;
+    height: 40vh;
+    position: relative;
+    background-color: white;
+    left: 40%;
+	margin-top: -200px;
+	z-index: 1001;
 }
