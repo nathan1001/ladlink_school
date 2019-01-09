@@ -1,4 +1,14 @@
-
+@font-face {
+  font-family: verdana;
+  src: url('../font/Verdana.ttf');
+}
+@font-face {
+  font-family: charter;
+  src: url('../font/CharterBlackBT.ttf');
+}
+body{
+	font-family: verdana, Verdana, sans-serif;
+}
 /*HOME*/
 .home-hero{
 	background-size: cover;
@@ -9,19 +19,28 @@
 	background-color: #9B2437;
 	color: white ;
 }
-.school-menu-text-title:hover{
-	
+.school-menu-text-title{
+	font-family: charter, CharterBlackBT, serif;
+	font-weight: 600;
 }
-.school-menu-text-boody{	
+.school-menu-text-body{	
+	font-family: verdana, Verdana, sans-serif;
 }
 .school-menu-text-age{
+	font-family: charter, CharterBlackBT, serif;
+	font-weight: 600;
 	display: block;
+}
+.school-age-number{
+	font-family: charter, CharterBlackBT, serif;
+	font-weight: 600;
+	font-size: 3.5rem;
 }
 .school-menu-text-age>h1{
 	display: inline-block;
 }
 .school-menu-text-age>sup{
-	top: -1.5em;
+	top: -2.5em;
 }
 .welcome-message-container{
 	height: 100vh;
