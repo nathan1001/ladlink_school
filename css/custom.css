@@ -17,7 +17,7 @@ body{
 }
 .school-menu-card>div:hover {
 	background-color: #9B2437;
-	color: white ;
+	color: white !important;
 }
 .school-menu-text-title{
 	font-family: charter, CharterBlackBT, serif;
@@ -95,4 +95,39 @@ body{
 }
 .spring-wood-bg{
 	background-color: #F9F3F3;
+}
+/*ABOUT*/
+.intro-section-container{
+	height: 60vh;
+    width: 80vw;
+	margin-top: 150px;
+    position: relative;
+    left: 0;
+}
+.page-hero{
+	background-size: cover;
+    height: 55vh;
+    width: 50vw;
+    position: absolute;
+	right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+	z-index: 1000;
+}
+.bg-intro-text{
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+}
+.page-heading{
+	position: absolute;
+}
+.intro-text-container{
+	width: 45vw;
+}
+.mission-statement{
+/*	margin-left: 20px;*/
+	display: inline-block;
+	vertical-align: bottom;
+	width: calc(100% - 120px);
 }
