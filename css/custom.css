@@ -8,6 +8,36 @@
 }
 body{
 	font-family: verdana, Verdana, sans-serif;
+	color: black;
+}
+.underline-header{
+/*
+	border-bottom: 1px solid #9B2437;
+	border-bottom-width: 30px;
+*/
+}
+.section-title{
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+.school-menu-text-body, .splash-verdana{	
+	font-family: verdana, Verdana, sans-serif;
+}
+.school-menu-text-title, .school-menu-text, .school-menu-text-age, .school-age-number, .muted-page-title, .column-title, .splash-charter{
+	font-family: charter, CharterBlackBT, serif;
+}
+.splash-white{
+	color: white;
+}
+.splash-burgundy{
+	color: #9B2437;
+}
+.school-menu-card, .superscript, school-age-number, .svg-icon, .mission-statement, .school-age-number{
+	display: inline-block;
+} 
+.muted-page-title{
+	font-size: 8rem;
+	font-weight: 600;
 }
 /*HOME*/
 .home-hero{
@@ -15,32 +45,36 @@ body{
 	background-position: center;
 	height: 65vh;
 }
-.school-menu-card>div:hover {
+.school-menu-section{
+	width: 100%;
+	font-size: 0;
+}
+.school-menu-card{
+	font-size: 16px;
+	width: 24.9%;
+	border-right: 1px solid #F3F1F2;
+}
+.school-menu-card:hover {
 	background-color: #9B2437;
 	color: white !important;
 }
 .school-menu-text-title{
-	font-family: charter, CharterBlackBT, serif;
+	
 	font-weight: 600;
+	font-size: 2em;
 }
-.school-menu-text-body{	
-	font-family: verdana, Verdana, sans-serif;
-}
+
 .school-menu-text-age{
-	font-family: charter, CharterBlackBT, serif;
 	font-weight: 600;
 	display: block;
 }
+
 .school-age-number{
-	font-family: charter, CharterBlackBT, serif;
 	font-weight: 600;
 	font-size: 3.5rem;
 }
-.school-menu-text-age>h1{
-	display: inline-block;
-}
-.school-menu-text-age>sup{
-	top: -2.5em;
+.school-age-number:hover, superscript:hover{
+	color: white;
 }
 .welcome-message-container{
 	height: 100vh;
@@ -67,6 +101,21 @@ body{
     background-position: center;
 	z-index: 1000;
 }
+.column-title{
+	font-weight: 400;
+	font-size: 1.8em;
+}
+.column-header{
+	font-weight: 600;
+	font-size: 1.4em;
+}
+.calendar-header{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+.calendar-body{
+	font-size: 0.8em;
+}
 .message-box{
 	width: 40vw;
     height: auto;
@@ -85,7 +134,10 @@ body{
 .svg-icon{
 	width: 90px;
 	height: auto;
+}
+.fact-card{
 	display: inline-block;
+	width: 27%;
 }
 .fact-title{
 	margin-left: 10px;
@@ -126,8 +178,6 @@ body{
 	width: 45vw;
 }
 .mission-statement{
-/*	margin-left: 20px;*/
-	display: inline-block;
 	vertical-align: bottom;
 	width: calc(100% - 120px);
 }
