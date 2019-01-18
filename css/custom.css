@@ -32,6 +32,17 @@ body{
 .splash-burgundy{
 	color: #9B2437;
 }
+.fill-burgundy{
+	background: #9B2437;
+}
+.fill-white{
+	background: white;
+}
+.transparent-button{
+	color: #9B2437;
+	border: 1px solid #9B2437;
+	background: none;
+}
 .school-menu-card, .superscript, school-age-number, .svg-icon, .mission-statement, .school-age-number{
 	display: inline-block;
 } 
@@ -177,7 +188,33 @@ body{
 .intro-text-container{
 	width: 45vw;
 }
+.admission-process-section{
+	height: 50vh;
+}
 .mission-statement{
-	vertical-align: bottom;
+	vertical-align: top;
 	width: calc(100% - 120px);
+	font-size: 1.2em;
+}
+.mgt-image{
+	width: 200px;
+}
+.admission-cta-button{
+	position: absolute;
+    bottom: 0;
+    transform: translate(-50%,50%);
+    margin-left: calc(50% - 40px);
+}
+.admission-cta-button-inner{
+	width: 50vw;
+    height: 10vh;
+    border: none;
+}
+/*Campus Life*/
+.campus-life-calendar{
+	background-color: #9B2437;
+    height: 60vh;
+    position: relative;
+    width: 30%;
+	margin-top: -100px;
 }
