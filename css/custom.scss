@@ -1,0 +1,344 @@
+$tablet: "(min-width: 640px) and (max-width: 1200px)";//" and (orientation: landscape)";
+$tablet-portrait: "(min-width: 640px) and (max-width: 1200px) and (orientation: portrait)";
+$phone: "only screen and (max-width: 640px)";
+$burgundy: #9B2437;
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+body{
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+@mixin no-select{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;   
+}
+
+html{	
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+@font-face {
+  font-family: verdana;
+  src: url('../font/Verdana.ttf');
+}
+@font-face {
+  font-family: charter;
+  src: url('../font/CharterBlackBT.ttf');
+}
+body{
+	font-family: verdana, Verdana, sans-serif;
+	color: black;
+}
+.underline-header{
+/*
+	border-bottom: 1px solid $burgundy;
+	border-bottom-width: 30px;
+*/
+}
+.section-title{
+	font-size: 3.5rem;
+	font-weight: 500;
+	@media #{$phone}{
+		font-size: 2rem;
+	}
+
+}
+.school-menu-text-body, .splash-verdana{	
+	font-family: verdana, Verdana, sans-serif;
+}
+.school-menu-text-title, .school-menu-text, .school-menu-text-age, .school-age-number, .muted-page-title, .column-title, .splash-charter{
+	font-family: charter, CharterBlackBT, serif;
+}
+.splash-white{
+	color: white;
+}
+.splash-burgundy{
+	color: $burgundy;
+}
+.fill-burgundy{
+	background: $burgundy;
+}
+.fill-white{
+	background: white;
+}
+.transparent-button{
+	color: $burgundy;
+	border: 1px solid $burgundy;
+	background: none;
+}
+.school-menu-card, .superscript, school-age-number, .svg-icon, .mission-statement, .school-age-number{
+	display: inline-block;
+} 
+.muted-page-title{
+	font-size: 8rem;
+	font-weight: 600;
+}
+/*HOME*/
+.home-hero{
+	background-size: cover;
+	background-position: center;
+	height: 65vh;
+}
+.school-menu-section{
+	width: 100%;
+	font-size: 0;
+}
+.school-menu-card{
+	font-size: 16px;
+	width: calc(25% - 1px);
+	border-right: 1px solid #F3F1F2;
+	@media #{$phone}{
+		width: 100%;
+		border-bottom: 1px solid #F3F1F2;
+	}
+}
+.school-menu-card:hover {
+	background-color: $burgundy;
+	color: white !important;
+}
+.school-menu-card:hover > .uk-padding .school-menu-text-age > .splash-burgundy{
+	color:white;
+}
+.school-menu-text-title{
+	
+	font-weight: 600;
+	font-size: 2em;
+}
+
+.school-menu-text-age{
+//	font-weight: 600;
+	display: block;
+}
+
+.school-age-number{
+	font-weight: 600;
+	font-size: 3.5rem;
+}
+.school-age-number:hover, superscript:hover{
+	color: white;
+}
+.superscript{
+	vertical-align: 100%;
+	border-bottom: 1px solid $burgundy;
+}
+.welcome-message-container{
+	height: 100vh;
+    width: 80vw;
+    position: absolute;
+    right: 0;
+	@media #{$phone}{
+		display: none;
+	}
+
+}
+.text-body{
+	@media #{$phone}{
+		font-size: 0.9em;
+	}
+}
+.home-calendar{
+	background-color: $burgundy;
+    height: 60vh;
+    position: relative;
+    width: 30%;
+	margin-top: -300px;
+	@media #{$phone}{
+		margin-left: 0;
+		margin-top: 0;
+		width: auto;
+		position: static;
+		height: auto;
+	}
+}
+.home-head{
+	background-size: cover;
+    height: 55vh;
+    width: 50vw;
+    position: relative;
+	margin-top: 100px;
+	margin-left: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+	z-index: 1000;
+	@media #{$phone}{
+		margin-left: 0;
+		margin-top: 0;
+		width: auto;
+		position: static;
+	}
+
+}
+.column-title{
+	font-weight: 400;
+	font-size: 1.8em;
+	text-align: center;
+	@media #{$phone}{
+		text-align: left;
+	}
+
+}
+.column-header{
+	font-weight: 600;
+	font-size: 1.4em;
+	@media #{$phone}{
+		font-size: 1.2em;
+	}
+}
+.calendar-header{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+.calendar-body{
+	font-size: 0.8em;
+}
+.message-box{
+	width: 40vw;
+    height: auto;
+    position: relative;
+    background-color: white;
+    left: 40%;
+	margin-top: -200px;
+	z-index: 1001;
+	@media #{$phone}{
+		margin-left: 0;
+		margin-top: 0;
+		width: auto;
+		position: static;
+	}
+}
+.calendar-title{
+	margin-top: 120px;
+	@media #{$phone}{
+		margin-top: 0;
+	}
+
+}
+.calendar-events{
+	border-left: 4px solid white;
+	@media #{$phone}{
+		margin-top: 30px;
+	}
+}
+.svg-icon{
+	width: 90px;
+	height: auto;
+	@media #{$phone}{
+		width: 55px;
+	}
+}
+.fact-card{
+	display: inline-block;
+	width: 27%;
+	@media #{$phone}{
+		width: auto;
+		margin-top: 15px;
+	}
+}
+.fact-title{
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	width: calc(100% - 120px);
+	@media #{$phone}{
+		padding-top: 15px;
+	}
+}
+.spring-wood-bg{
+	background-color: #F9F3F3;
+}
+/*ABOUT*/
+.intro-section-container{
+	height: 60vh;
+    width: 80vw;
+	margin-top: 150px;
+    position: relative;
+    left: 0;
+	@media #{$phone}{
+		width: 100vw;
+		margin-top: 0;
+		position: static;
+		height: auto;
+		background-color: white;
+	}
+}
+.page-hero{
+	background-size: cover;
+    height: 55vh;
+    width: 50vw;
+    position: absolute;
+	right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+	z-index: 1000;
+	@media #{$phone}{
+		position: static;
+		width: 100%;
+	}
+}
+.bg-intro-text{
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+	@media #{$phone}{
+		display: none;
+	}
+}
+.page-heading{
+	position: absolute;
+	@media #{$phone}{
+		position: static;
+	}
+}
+.intro-text-container{
+	width: 45vw;
+	@media #{$phone}{
+		width: 100vw;
+	}
+}
+.admission-process-section{
+	height: 50vh;
+}
+.mission-statement{
+	vertical-align: top;
+	width: calc(100% - 120px);
+	font-size: 1.2em;
+}
+.mgt-image{
+	width: 200px;
+}
+.admission-cta-button{
+	position: absolute;
+    bottom: 0;
+    transform: translate(-50%,50%);
+    margin-left: calc(50% - 40px);
+}
+.admission-cta-button-inner{
+	width: 50vw;
+    height: 10vh;
+    border: none;
+}
+/*Campus Life*/
+.campus-life-calendar{
+	background-color: $burgundy;
+    height: 60vh;
+    position: relative;
+    width: 30%;
+	margin-top: -100px;
+}
