@@ -52,6 +52,13 @@ body{
 	border-bottom-width: 30px;
 */
 }
+.margin-from-title{
+	margin-top: 150px;
+}
+.section-width{
+	width: 70vw;
+	margin: auto;
+}
 .section-title{
 	font-size: 3.5rem;
 	font-weight: 500;
@@ -149,6 +156,7 @@ body{
 
 }
 .text-body{
+	font-size: 0.9em;
 	@media #{$phone}{
 		font-size: 0.9em;
 	}
@@ -191,12 +199,13 @@ body{
 	text-align: center;
 	@media #{$phone}{
 		text-align: left;
+		font-size: 1.5em;
 	}
 
 }
 .column-header{
 	font-weight: 600;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	@media #{$phone}{
 		font-size: 1.2em;
 	}
@@ -237,7 +246,7 @@ body{
 	}
 }
 .svg-icon{
-	width: 90px;
+	width: 70px;
 	height: auto;
 	@media #{$phone}{
 		width: 55px;
@@ -245,10 +254,28 @@ body{
 }
 .fact-card{
 	display: inline-block;
-	width: 27%;
+	width: calc(69vw / 3);
 	@media #{$phone}{
 		width: auto;
 		margin-top: 15px;
+	}
+}
+.left-fact-padding{
+	padding-right: 60px;
+	@media #{$phone}{
+		padding-right: 0px;
+	}
+}
+.mid-fact-padding{
+	padding: 0 30px;
+	@media #{$phone}{
+		padding: 0 0;
+	}
+}
+.right-fact-padding{
+	padding-left: 60px;
+		@media #{$phone}{
+		padding-left: 0px;
 	}
 }
 .fact-title{
@@ -278,6 +305,12 @@ body{
 		background-color: white;
 	}
 }
+.intro-section-button{
+	@media #{$phone}{
+		padding: 0 20px;
+		line-height: 45px;
+	}
+}
 .page-hero{
 	background-size: cover;
     height: 55vh;
@@ -289,6 +322,7 @@ body{
 	z-index: 1000;
 	@media #{$phone}{
 		position: static;
+		height: 35vh;
 		width: 100%;
 	}
 }
@@ -314,11 +348,25 @@ body{
 }
 .admission-process-section{
 	height: 50vh;
+	@media #{$phone}{
+		height: auto;
+	}
 }
 .mission-statement{
 	vertical-align: top;
 	width: calc(100% - 120px);
 	font-size: 1.2em;
+	@media #{$phone}{
+		font-size: 1em;
+		width: auto;
+		text-align: left;
+	}
+}
+.mission-statement-icon{
+	@media #{$phone}{
+		width: 45px;
+		text-align: center;
+	}
 }
 .mgt-image{
 	width: 200px;
@@ -333,6 +381,10 @@ body{
 	width: 50vw;
     height: 10vh;
     border: none;
+	@media #{$phone}{
+		width: auto;
+		height: auto;
+	}
 }
 /*Campus Life*/
 .campus-life-calendar{
