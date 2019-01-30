@@ -16,18 +16,38 @@
 		<!-- UIkit JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+		<!-- Master  JS -->
+		
 	</head>
 	<body>
 		<!--HEADER-->
 		<header>
-			<div class="uk-container ">
-				<nav class="uk-navbar-transparent" data-uk-navbar >
-					<div class="uk-navbar-left">
-						<a class="uk-navbar-item uk-logo" href="#">Logo</a>
-					</div>
-					<div class="uk-navbar-right uk-visible@m">
-						<ul class="uk-navbar-nav">
-							<li class="uk-active"><a href="#">Home</a></li>
+			<div class="logo-div">
+				<a href="http://africsec.com"><img class="logo-white" src="images/logo.png" alt="AFRICSEC LOGO"/></a>
+			</div>
+			<div class="header-upper">
+				<nav class="clear-menu">
+					<ul>
+						<li class="uk-active"><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+<!--
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Programmes</a></li>
+							<li><a href="#">Community</a></li>
+-->
+							<li><a href="#">Campus Life</a></li>
+							<li><a href="#">Parents</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a class="intro-section-button uk-button fill-burgundy splash-white">Apply Now</a></li>
+							
+					</ul>
+
+				</nav>
+			</div>
+			<div class="mobile-menu-wrap menu-closed">
+				<nav class="mobile-menu" >
+					<ul>
+						<li class="uk-active"><a href="#">Home</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Admissions</a></li>
 							<li><a href="#">Programmes</a></li>
@@ -35,11 +55,18 @@
 							<li><a href="#">Campus Life</a></li>
 							<li><a href="#">Parents</a></li>
 							<li><a href="#">Contact</a></li>
-							<li><a class="uk-button uk-button-default">Apply Now</a></li>
-						</ul>
-					</div>
+							<li><a class="uk-button uk-button-default mobile-menu-button fill-burgundy">Apply Now</a></li>
+					</ul>
 				</nav>
 			</div>
+			<div>
+				
+			</div>
+			<div class="menu-icon menu-icon-inactive">
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+			</div>
+
 		</header>
 		<!--/HEADER-->
 		
@@ -294,5 +321,19 @@
 		
 		
 	</body>
+
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script>
+	jQuery(document).ready(function($) {
+		$('.menu-icon').click(function(event) {
+			$(this).toggleClass('menu-icon-inactive').toggleClass('menu-icon-active');
+			$('.mobile-menu-wrap').toggleClass('menu-closed').toggleClass('menu-open');
+		});
+	});
 	
+</script>
+  
 </html>

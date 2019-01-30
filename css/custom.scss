@@ -54,6 +54,9 @@ body{
 }
 .margin-from-title{
 	margin-top: 150px;
+	@media #{$phone}{
+		margin-top: 50px;
+	}
 }
 .section-width{
 	width: 70vw;
@@ -355,9 +358,9 @@ body{
 .mission-statement{
 	vertical-align: top;
 	width: calc(100% - 120px);
-	font-size: 1.2em;
+	font-size: 1em;
 	@media #{$phone}{
-		font-size: 1em;
+		font-size: 1.1em;
 		width: auto;
 		text-align: left;
 	}
@@ -375,7 +378,7 @@ body{
 	position: absolute;
     bottom: 0;
     transform: translate(-50%,50%);
-    margin-left: calc(50% - 40px);
+    margin-left: 35%;
 }
 .admission-cta-button-inner{
 	width: 50vw;
@@ -394,3 +397,147 @@ body{
     width: 30%;
 	margin-top: -100px;
 }
+
+/*Header*/
+
+header {
+  font-weight: 300;
+  width: 100vw;
+  height: 75px;
+  position: static;
+  background: white;
+//  z-index: 950;
+  transition: top 0.2s ease-in-out;
+  top: 0; 
+}
+  @media only screen and (max-width: 640px) {
+    header {
+     	height: 50px; 
+		position: fixed;
+	  	background: rgba(255, 255, 255, 0.95);
+	  	z-index: 950;
+	  	transition: top 0.2s ease-in-out;
+	  	top: 0;
+	  } 
+}
+
+.header-upper {
+  position: absolute;
+  width: 100%;
+  z-index: 100; }
+  @media only screen and (max-width: 640px) {
+    .header-upper {
+      display: none; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .header-upper {
+      display: none; } }
+
+.clear-menu {
+  text-align: right;
+  width: inherit;
+  padding: 20px 50px; }
+  .clear-menu li {
+    display: inline;
+    list-style-type: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: black;
+    padding: 0 25px; }
+    .clear-menu li:hover {
+      color: #2980b9; }
+.logo-div {
+  position: absolute;
+  padding: 15px 35px;
+  z-index: 200; }
+  @media only screen and (max-width: 640px) {
+    .logo-div {
+      padding: 5px 0; } }
+
+@media only screen and (max-width: 640px) {
+  .mobile-center {
+    text-align: center; } }
+@media only screen and (max-width: 640px) {
+  .mobile-center {
+    text-align: center; } }
+
+.mobile-menu-wrap {
+  background-color: white;
+  color: white;
+  font-size: 0;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 300;
+  transition: all .5s ease-in-out;
+  padding: 75px 25px; }
+
+.menu-icon {
+  z-index: 400;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  transition: all .35s ease-in-out;
+  display: none;
+  background-color: fade(#000, 15%);
+  border-radius: 5px; }
+  @media only screen and (max-width: 640px) {
+    .menu-icon {
+      display: block; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .menu-icon {
+      display: block;
+      top: 25px;
+      right: 25px; } }
+
+.icon-bar {
+  width: 35px;
+  height: 2px;
+  background-color: $burgundy;
+  margin: 10px; }
+
+.menu-icon-active {
+  transform: rotate(90deg); }
+
+.icon-bar {
+  width: 35px;
+  height: 2px;
+  margin: 10px; }
+
+.menu-icon-inactive {
+  color: $burgundy; }
+
+.mobile-menu li {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+  color: #353535;
+  white-space: nowrap;
+  transition: all .5s ease-in-out; }
+
+.menu-open {
+  width: 100vw;
+  left: 0;
+  color: white; }
+  .menu-open .mobile-menu li {
+    text-indent: 10vw; }
+
+.menu-closed {
+  width: 0;
+  left: 100vw; }
+  .menu-closed .mobile-menu li {
+    text-indent: -150vw; }
+
+.mini-banner-wrap {
+  width: 100vw;
+  min-height: 65vh;
+  background-color: #7f8c8d;
+  display: table;
+  background-size: cover;
+  background-attachment: fixed; }
+  .mini-banner-wrap .banner-inner {
+    padding: 100px 0; }
+  @media only screen and (max-width: 640px) {
+    .mini-banner-wrap {
+      background-attachment: scroll; } }
