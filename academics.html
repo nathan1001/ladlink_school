@@ -23,26 +23,53 @@
 	<body>
 		<!--HEADER-->
 		<header>
-			<div class="uk-container ">
-				<nav class="uk-navbar-transparent" data-uk-navbar >
-					<div class="uk-navbar-left">
-						<a class="uk-navbar-item uk-logo" href="#">Logo</a>
-					</div>
-					<div class="uk-navbar-right uk-visible@m">
-						<ul class="uk-navbar-nav">
-							<li class="uk-active"><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
+			<div class="logo-div">
+				<a href="http://africsec.com"><img class="logo-white" src="images/logo.png" alt="LADLINK LOGO"/></a>
+			</div>
+			<div class="header-upper">
+				<nav class="clear-menu">
+					<ul>
+						<li class="uk-active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
 							<li><a href="#">Admissions</a></li>
-							<li><a href="#">Programmes</a></li>
+							<li><a href="academics.html">Programmes</a></li>
 							<li><a href="#">Community</a></li>
-							<li><a href="#">Campus Life</a></li>
+							<li><a href="campus_life.html">Campus Life</a></li>
 							<li><a href="#">Parents</a></li>
 							<li><a href="#">Contact</a></li>
-							<li><a class="uk-button uk-button-default">Apply Now</a></li>
-						</ul>
-					</div>
+							<li><a class="intro-section-button uk-button fill-burgundy splash-white">Apply Now</a></li>
+							
+					</ul>
+
 				</nav>
 			</div>
+			
+			<div class="mobile-menu-wrap menu-closed">
+			<div class="mobile-logo-div">
+				<a href=""><img class="logo-white" src="images/phone-book.svg" alt=""/></a>
+			</div>
+				<nav class="mobile-menu" >
+					<ul>
+						<li class="uk-active"><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="about.html">Admissions</a></li>
+							<li><a href="academics.html">Programmes</a></li>
+							<li><a href="#">Community</a></li>
+							<li><a href="campus_life.html">Campus Life</a></li>
+							<li><a href="#">Parents</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a class="uk-button uk-button-default mobile-menu-button fill-burgundy">Apply Now</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				
+			</div>
+			<div class="menu-icon menu-icon-inactive">
+				<div class="icon-bar"></div>
+				<div class="icon-bar"></div>
+			</div>
+
 		</header>
 		<!--/HEADER-->
 		
@@ -68,47 +95,76 @@
 		<!--SCHOOL MENU-->
 		<section class="uk-section uk-padding-remove school-menu-section" >
 			<div class=" uk-text-left">
-				<div class="school-menu-card" onclick="schoolClick('creche')">
+				
+				<div class="school-menu-card">
 					<div class="uk-padding ">
-						<div class="uk-text school-menu-text-title" >Créche</div>
-						<p class="uk-text school-menu-text-body">State Certified Créche</p>
-						<div class="school-menu-text-age">
-							<div class="uk-text school-age-number splash-burgundy">1-2</div> <div class="superscript splash-burgundy">years old</div>
-						</div>
-						<span class="uk-margin-small-left" uk-icon="icon: arrow-right; ratio: 2"></span>
-					</div>
-				</div>
-				<div class="school-menu-card" onclick="schoolClick('preschool')">
-					<div class="uk-padding ">
-						<div class="uk-text school-menu-text-title">Preschool</div>
+						<div class="uk-text school-menu-text-title"> Crèche</div>
 						<p class="uk-text school-menu-text-body">State Certified Preschool</p>
 						<div class="school-menu-text-age">
-							<div class="uk-text school-age-number splash-burgundy">3-4</div> <div class="superscript splash-burgundy">years old</div>
+							<div class=" school-age-number splash-burgundy">12-16</div> <div class="superscript splash-burgundy">years old</div>
 						</div>
-						<span class="uk-margin-small-left" uk-icon="icon: arrow-right; ratio: 2"></span>
+						<div class="menu-arrow-icon">							
+							<svg class="academics-menu-svg-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+								<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+								C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+								c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+							</svg>
+						</div>
 					</div>
-					
 				</div>
-				<div class="school-menu-card" onclick="schoolClick('primaryschool')">
+				<div class="school-menu-card">
+					<div class="uk-padding ">
+						<div class="uk-text school-menu-text-title"> Pre-School</div>
+						<p class="uk-text school-menu-text-body">State Certified Preschool</p>
+						<div class="school-menu-text-age">
+							<div class=" school-age-number splash-burgundy">12-16</div> <div class="superscript splash-burgundy">years old</div>
+						</div>
+						<div class="menu-arrow-icon">							
+							<svg class="academics-menu-svg-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+								<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+								C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+								c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="school-menu-card">
 					<div class="uk-padding ">
 						<div class="uk-text school-menu-text-title"> Primary School</div>
 						<p class="uk-text school-menu-text-body">State Certified Preschool</p>
 						<div class="school-menu-text-age">
-							<div class="uk-text school-age-number splash-burgundy">12-16</div> <div class="superscript splash-burgundy">years old</div>
+							<div class=" school-age-number splash-burgundy">12-16</div> <div class="superscript splash-burgundy">years old</div>
 						</div>
-						<span class="uk-margin-small-left" uk-icon="icon: arrow-right; ratio: 2"></span>
+						<div class="menu-arrow-icon">							
+							<svg class="academics-menu-svg-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+								<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+								C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+								c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+							</svg>
+						</div>
 					</div>
 				</div>
-				<div class="school-menu-card" style="border-right: none" onclick="schoolClick('jhs')">
+				<div class="school-menu-card" style="border-right: none">
 					<div class="uk-padding ">
-						<div class="uk-text school-menu-text-title">Junior High School</div>
-						<p class="uk-text school-menu-text-body">Basic Education Certificate Exam</p>
+						<div class="uk-text school-menu-text-title"> Junior high School</div>
+						<p class="uk-text school-menu-text-body">State Certified Preschool</p>
 						<div class="school-menu-text-age">
-							<div class="uk-text school-age-number splash-burgundy">5-12</div> <div class="superscript splash-burgundy">years old</div>
+							<div class=" school-age-number splash-burgundy">12-16</div> <div class="superscript splash-burgundy">years old</div>
 						</div>
-						<span class="uk-margin-small-left" uk-icon="icon: arrow-right; ratio: 2"></span>
+						<div class="menu-arrow-icon">							
+							<svg class="academics-menu-svg-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+								<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+								C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+								c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+							</svg>
+						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		<!--/SCHOOL MENU-->

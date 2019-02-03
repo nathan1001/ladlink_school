@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="sr" lang="en">
 
     <head>
         <title>Ladlink School</title>
@@ -18,24 +18,25 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
 		<!-- Master  JS -->
 		
+		<!-- Scroll Reveal	-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		
 	</head>
 	<body>
 		<!--HEADER-->
 		<header>
 			<div class="logo-div">
-				<a href="http://africsec.com"><img class="logo-white" src="images/logo.png" alt="AFRICSEC LOGO"/></a>
+				<a href="http://africsec.com"><img class="logo-white" src="images/logo.png" alt="LADLINK LOGO"/></a>
 			</div>
 			<div class="header-upper">
 				<nav class="clear-menu">
 					<ul>
-						<li class="uk-active"><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-<!--
+						<li class="uk-active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
 							<li><a href="#">Admissions</a></li>
-							<li><a href="#">Programmes</a></li>
+							<li><a href="academics.html">Programmes</a></li>
 							<li><a href="#">Community</a></li>
--->
-							<li><a href="#">Campus Life</a></li>
+							<li><a href="campus_life.html">Campus Life</a></li>
 							<li><a href="#">Parents</a></li>
 							<li><a href="#">Contact</a></li>
 							<li><a class="intro-section-button uk-button fill-burgundy splash-white">Apply Now</a></li>
@@ -53,10 +54,10 @@
 					<ul>
 						<li class="uk-active"><a href="#">Home</a></li>
 							<li><a href="#">About</a></li>
-							<li><a href="#">Admissions</a></li>
+							<li><a href="about.html">Admissions</a></li>
 							<li><a href="#">Programmes</a></li>
 							<li><a href="#">Community</a></li>
-							<li><a href="#">Campus Life</a></li>
+							<li><a href="campus_life.html">Campus Life</a></li>
 							<li><a href="#">Parents</a></li>
 							<li><a href="#">Contact</a></li>
 							<li><a class="uk-button uk-button-default mobile-menu-button fill-burgundy">Apply Now</a></li>
@@ -177,7 +178,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="home-calendar">
+				<div class="home-calendar load-hidden">
 					<div class="uk-padding ">
 						<div class="uk-text-capitalize uk-text-center calendar-title"><div class="column-title splash-white">Calendar</div>
 						</div>
@@ -285,7 +286,7 @@
 			<div class=" uk-text  section-width">
 				
 					<div class="margin-from-title uk-child-width-1-4@m " uk-grid>
-						<div>
+						<div class="news-card">
 							<div class="uk-card ">
 								<div class="uk-card-media-top">
 									<img src="images/children-cute-enjoyment-1432697.jpg" alt="">
@@ -299,7 +300,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="news-card">
 							<div class="uk-card ">
 								<div class="uk-card-media-top">
 									<img src="images/blur-children-class-448877.jpg" alt="">
@@ -313,7 +314,7 @@
 								<a href="#" class="uk-button uk-button-text splash-burgundy">Read more</a>
 							</div>
 						</div>
-						<div>
+						<div class="news-card">
 							<div class="uk-card ">
 								<div class="uk-card-media-top">
 									<img src="images/children-close-up-crowd-764681.jpg" alt="">
@@ -327,6 +328,7 @@
 								<a href="#" class="uk-button uk-button-text">Read more</a>
 							</div>
 						</div>
+						<div class="news-card"> 
 						<div class="uk-card ">
 							<div class="uk-card-media-top">
 								<img src="images/children-cute-enjoyment-1432697.jpg" alt="">
@@ -338,6 +340,7 @@
 							<div class="uk-card-footer uk-padding-remove">
 								<a href="#" class="uk-button uk-button-text splash-burgundy">Read more</a>
 							</div>
+						</div>
 						</div>
 					</div>
 				
@@ -360,6 +363,28 @@
   crossorigin="anonymous"></script>
   
   <script>
+	  var slideUp = {
+			distance: '150%',
+			origin: 'bottom',
+			opacity: null
+		};
+	  var slideLeft = {
+		  distance: '150%',
+			origin: 'left',
+			opacity: null
+	  }
+	  var slideRight = {
+		  distance: '150%',
+			origin: 'right',
+			opacity: null
+	  }
+	  ScrollReveal().reveal('.home-calendar',slideUp);
+	  ScrollReveal().reveal('.home-head',slideLeft);
+	  ScrollReveal().reveal('.message-box',slideRight);
+	  ScrollReveal().reveal('.fact-card',{duration: 2000});
+	  ScrollReveal().reveal('.news-card',{duration: 2000});
+	  ScrollReveal().reveal('.school-menu-card', { interval: 200 });
+	  
 	jQuery(document).ready(function($) {
 		$('.menu-icon').click(function(event) {
 			$(this).toggleClass('menu-icon-inactive').toggleClass('menu-icon-active');
