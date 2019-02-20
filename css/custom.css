@@ -34,8 +34,7 @@ a:hover {
   font-family: verdana;
   src: url("../font/Verdana.ttf"); }
 @font-face {
-  font-family: charter;
-  src: url("../font/CharterBlackBT.ttf"); }
+  font-family: charter; }
 body {
   font-family: verdana, Verdana, sans-serif;
   color: black; }
@@ -48,23 +47,32 @@ body {
 
 .margin-from-title {
   margin-top: 150px; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .margin-from-title {
+      margin-top: 50px; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
     .margin-from-title {
       margin-top: 50px; } }
 
 .section-width {
   width: 70vw;
   margin: auto; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .section-width {
       width: 80vw; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .section-width {
+      width: 85vw; } }
 
 .section-title {
   font-size: 3.5rem;
   font-weight: 500; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .section-title {
       font-size: 2rem; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .section-title {
+      font-size: 2.2rem; } }
 
 .school-menu-text-body, .splash-verdana {
   font-family: verdana, Verdana, sans-serif; }
@@ -95,6 +103,9 @@ body {
 .muted-page-title {
   font-size: 8rem;
   font-weight: 600; }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .muted-page-title {
+      font-size: 4em; } }
 
 /*HOME*/
 .home-hero {
@@ -106,12 +117,19 @@ body {
   width: 100%;
   font-size: 0; }
 
+.school-menu-text-body {
+  height: 50px; }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .school-menu-text-body {
+      font-size: 0.8em; } }
+
 .school-menu-card {
+  vertical-align: top;
   font-size: 16px;
   height: auto;
   width: 25%;
   border-right: 1px solid #F3F1F2; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .school-menu-card {
       width: 100%;
       border-bottom: 1px solid #F3F1F2;
@@ -120,6 +138,7 @@ body {
 .school-menu-card:hover {
   border-right: none;
   color: white !important;
+  background: none;
   animation: menu-hover-reveal 1s forwards; }
 
 .school-menu-card:hover > .uk-padding .school-menu-text-age > .splash-burgundy {
@@ -131,9 +150,6 @@ body {
 .school-menu-card:hover > .uk-padding .menu-arrow-icon > .menu-svg-arrow path, .school-menu-card:hover > .uk-padding .menu-arrow-icon > .academics-menu-svg-arrow path {
   fill: white !important; }
 
-.academics-menu-svg-arrow {
-  transform: rotate(90deg); }
-
 .school-menu-card:hover > .uk-padding .menu-arrow-icon > .menu-svg-arrow {
   -webkit-animation-name: bounce;
   /* Safari 4.0 - 8.0 */
@@ -142,7 +158,7 @@ body {
   animation-name: bounce;
   animation-iteration-count: infinite; }
 
-.school-menu-card:hover > .uk-padding .menu-arrow-icon > .menu-svg-arrow {
+.school-menu-card:hover > .uk-padding .menu-arrow-icon > .academics-menu-svg-arrow {
   -webkit-animation-name: bounce-down;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 0.8s;
@@ -153,7 +169,11 @@ body {
 .school-menu-text-title {
   height: 100px;
   font-weight: 600;
-  font-size: 2em; }
+  font-size: 1.7em; }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .school-menu-text-title {
+      font-size: 1.5em;
+      height: 70px; } }
 
 .menu-arrow-icon {
   margin: 40px 0 20px 0; }
@@ -163,7 +183,10 @@ body {
 
 .school-age-number {
   font-weight: 600;
-  font-size: 3.5rem; }
+  font-size: 3rem; }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .school-age-number {
+      font-size: 2.5rem; } }
 
 .school-age-number:hover, superscript:hover {
   color: white; }
@@ -171,13 +194,16 @@ body {
 .superscript {
   vertical-align: 100%;
   border-bottom: 1px solid #9B2437; }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .superscript {
+      font-size: 0.7em; } }
 
 .welcome-message-container {
   height: 100vh;
   width: 80vw;
   position: absolute;
   right: 0; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .welcome-message-container {
       display: none; } }
 
@@ -186,10 +212,14 @@ body {
   height: auto; }
 
 .text-body {
-  font-size: 0.9em; }
-  @media only screen and (max-width: 640px) {
+  font-size: 0.9em;
+  line-height: 1.6; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .text-body {
       font-size: 0.9em; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .text-body {
+      font-size: 0.8em; } }
 
 .home-calendar {
   background-color: #9B2437;
@@ -197,13 +227,17 @@ body {
   position: relative;
   width: 30%;
   margin-top: -300px; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .home-calendar {
       margin-left: 0;
       margin-top: 0;
       width: auto;
       position: static;
       height: auto; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .home-calendar {
+      height: auto;
+      width: 35%; } }
 
 .home-head {
   background-size: cover;
@@ -214,19 +248,23 @@ body {
   margin-left: 200px;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1000; }
-  @media only screen and (max-width: 640px) {
+  z-index: 1; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .home-head {
       margin-left: 0;
       margin-top: 0;
       width: auto;
       position: static; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .home-head {
+      width: 60vw;
+      margin-left: 100px; } }
 
 .column-title {
   font-weight: 400;
   font-size: 1.8em;
   text-align: center; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .column-title {
       text-align: left;
       font-size: 1.5em; } }
@@ -234,9 +272,12 @@ body {
 .column-header {
   font-weight: 600;
   font-size: 1.2em; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .column-header {
       font-size: 1.2em; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .column-header {
+      font-size: 1em; } }
 
 .calendar-header {
   font-size: 1.2em;
@@ -250,58 +291,81 @@ body {
   height: auto;
   position: relative;
   background-color: white;
-  left: 40%;
+  left: 55%;
   margin-top: -200px;
-  z-index: 1001; }
-  @media only screen and (max-width: 640px) {
+  z-index: 2; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .message-box {
       margin-left: 0;
       margin-top: 0;
       width: auto;
       position: static; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .message-box {
+      margin-top: -120px;
+      left: 45%;
+      width: 50vw; } }
 
 .calendar-title {
   margin-top: 120px; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .calendar-title {
       margin-top: 0; } }
 
 .calendar-events {
   border-left: 4px solid white; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .calendar-events {
       margin-top: 30px; } }
 
 .svg-icon {
   width: 70px;
   height: auto; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .svg-icon {
       width: 55px; } }
 
 .fact-card {
   display: inline-block;
+  vertical-align: top;
   width: calc(69vw / 3); }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .fact-card {
       width: auto;
       margin-top: 15px; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .fact-card {
+      width: calc(98% / 3); } }
+
+.application-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-bottom: 100px; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .application-card {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 0px; } }
+  @media (min-width: 640px) and (max-width: 1200px) {
+    .application-card {
+      width: auto; } }
 
 .left-fact-padding {
   padding-right: 60px; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .left-fact-padding {
       padding-right: 0px; } }
 
 .mid-fact-padding {
   padding: 0 30px; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .mid-fact-padding {
       padding: 0 0; } }
 
 .right-fact-padding {
   padding-left: 60px; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .right-fact-padding {
       padding-left: 0px; } }
 
@@ -310,7 +374,7 @@ body {
   display: inline-block;
   vertical-align: bottom;
   width: calc(100% - 120px); }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .fact-title {
       padding-top: 15px; } }
 
@@ -319,12 +383,13 @@ body {
 
 /*ABOUT*/
 .intro-section-container {
-  height: 60vh;
+  min-height: 60vh;
+  height: auto;
   width: 80vw;
   margin-top: 150px;
   position: relative;
   left: 0; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .intro-section-container {
       width: 100vw;
       margin-top: 0;
@@ -334,7 +399,7 @@ body {
 
 .intro-section-button {
   border: 1px solid #9B2437; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .intro-section-button {
       padding: 0 20px;
       line-height: 45px; } }
@@ -342,7 +407,13 @@ body {
 .intro-section-button:hover {
   border: 1px solid #9B2437;
   color: #9B2437;
-  background-color: white; }
+  background-color: white;
+  animation: button-hover-reveal 1s forwards; }
+
+.admission-cta-button:hover {
+  border: 1px solid #9B2437;
+  color: #9B2437;
+  animation: button-hover-reveal 1s forwards; }
 
 .page-hero {
   background-size: cover;
@@ -353,7 +424,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1000; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .page-hero {
       position: static;
       height: 35vh;
@@ -363,25 +434,25 @@ body {
   position: absolute;
   bottom: 0;
   right: 0; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .bg-intro-text {
       display: none; } }
 
 .page-heading {
   position: absolute; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .page-heading {
       position: static; } }
 
 .intro-text-container {
   width: 45vw; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .intro-text-container {
       width: 100vw; } }
 
 .admission-process-section {
   height: 50vh; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .admission-process-section {
       height: auto; } }
 
@@ -389,13 +460,13 @@ body {
   vertical-align: top;
   width: calc(100% - 120px);
   font-size: 1em; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .mission-statement {
       font-size: 1.1em;
       width: auto;
       text-align: left; } }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
   .mission-statement-icon {
     width: 45px;
     text-align: center; } }
@@ -411,9 +482,12 @@ body {
 
 .admission-cta-button-inner {
   width: 50vw;
-  height: 10vh;
+  height: 7vh;
+  color: white;
+  background: #9B2437;
+  padding-top: 10px;
   border: none; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .admission-cta-button-inner {
       width: auto;
       height: auto; } }
@@ -485,6 +559,9 @@ header {
   z-index: 200;
   width: 50px;
   top: 0; }
+
+.logo-white {
+  width: 60px; }
 
 @media only screen and (max-width: 640px) {
   .mobile-center {
@@ -598,7 +675,14 @@ header {
   100% {
     background-color: #9B2437;
     box-shadow: 15px 20px #ff00003d; } }
-li a {
+@keyframes button-hover-reveal {
+  0% {
+    box-shadow: 5px 10px white; }
+  25% {
+    box-shadow: 20px 25px #ff00003d; }
+  100% {
+    box-shadow: 10px 15px #ff00003d; } }
+.highlight {
   display: inline-block;
   position: relative;
   z-index: 2;
@@ -609,15 +693,14 @@ li a {
   padding: 0 10px;
   white-space: no-wrap; }
 
-li a:before {
+.highlight:before {
   content: '';
   display: inline-block;
   width: 100%;
-  height: 60%;
+  height: 100%;
   position: absolute;
   z-index: 1;
   left: 0px;
-  bottom: 22%;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #ff00003d 50%);
   background-position: -0% 0;
   background-size: 200% 10px;
@@ -626,7 +709,7 @@ li a:before {
   transform: skew(0deg, -1.5deg);
   opacity: 0.8; }
 
-li a:hover:before {
+.highlight:hover:before {
   background-position: -99.99% 0; }
 
 /*# sourceMappingURL=custom.css.map */
