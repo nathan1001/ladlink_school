@@ -160,8 +160,13 @@ body{
 		height: auto;
 	}
 }
+.card-link:hover{
+	color: white !important;
+	text-decoration: none !important;
+	cursor: pointer !important;
+}
 .school-menu-card:hover {
-//	background-color: $burgundy;
+	cursor: pointer;
 	border-right: none;
 	color: white !important;
 	background: none;
@@ -182,6 +187,29 @@ body{
 .uk-active > .activate-card .menu-arrow-icon > .menu-svg-arrow  path, .uk-active > .activate-card .menu-arrow-icon > .academics-menu-svg-arrow  path {
 	fill: white !important;
 }
+.school-menu-card:hover > a .uk-padding .school-menu-text-age > .splash-burgundy{
+	color:white;
+}
+.school-menu-card:hover > a .uk-padding .school-menu-text-age > .superscript{
+	border-bottom: 1px solid white;
+}
+.school-menu-card:hover > a .uk-padding .menu-arrow-icon > .menu-svg-arrow  path, .school-menu-card:hover > a .uk-padding .menu-arrow-icon > .academics-menu-svg-arrow  path {
+	fill: white !important;
+}
+
+.school-menu-card:hover > a .uk-padding .menu-arrow-icon > .menu-svg-arrow{
+	-webkit-animation-name: bounce; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: bounce;	
+    animation-iteration-count: infinite;
+}
+.school-menu-card:hover > a .uk-padding .menu-arrow-icon > .academics-menu-svg-arrow{
+	-webkit-animation-name: bounce-down; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: bounce-down;	
+    animation-iteration-count: infinite;
+}
+
 .school-menu-card:hover > .uk-padding .school-menu-text-age > .splash-burgundy{
 	color:white;
 }
@@ -191,9 +219,7 @@ body{
 .school-menu-card:hover > .uk-padding .menu-arrow-icon > .menu-svg-arrow  path, .school-menu-card:hover > .uk-padding .menu-arrow-icon > .academics-menu-svg-arrow  path {
 	fill: white !important;
 }
-.academics-menu-svg-arrow{
-//	transform: rotate(90deg);
-}
+
 .school-menu-card:hover > .uk-padding .menu-arrow-icon > .menu-svg-arrow{
 	-webkit-animation-name: bounce; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
@@ -492,7 +518,7 @@ body{
 	right: 0;
     background-repeat: no-repeat;
     background-position: center;
-	z-index: 1000;
+	z-index: 1;
 	@media #{$phone, $tablet-portrait}{
 		position: static;
 		height: 35vh;
@@ -845,7 +871,7 @@ header {
 	margin-top: 30px;
 	width: 100%;
 	color: white;
-	@media #{$phone, $tablet-portrait}{
+	@media #{$phone, $tablet-portrait, $tablet}{
 		font-size: 0.8em;
 	}
 }
@@ -866,4 +892,35 @@ header {
 		margin-top: 20px;
 		width: 100%;
 	}
+}
+.contact-page-hero{
+	background-size: cover;
+    height: 45vh;
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    margin-top: 100px;
+    margin-right: 100px;
+	@media #{$phone, $tablet-portrait}{
+		position: static;
+		height: 35vh;
+		width: 100%;
+		margin-top: 0px;
+	}
+	@media #{$tablet, $phone, $tablet-portrait}{
+		font-size: 0.8em;
+	}
+	@media #{$tablet}{
+		margin-right: 0px;
+	}
+	
+}
+.geo-location-text{
+	font-size: 0.9em;
+}
+.contact-page-section{
+	margin-top: 50px;
 }

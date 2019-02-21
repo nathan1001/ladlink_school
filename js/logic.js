@@ -21,6 +21,7 @@ ScrollReveal().reveal('.home-calendar',slideUp);
 ScrollReveal().reveal('.home-head',slideLeft);
 ScrollReveal().reveal('.intro-section-container',slideLeft);
 ScrollReveal().reveal('.page-hero',slideRight);
+ScrollReveal().reveal('.contact-page-hero',slideRight);
 ScrollReveal().reveal('.page-heading',slideUp);
 ScrollReveal().reveal('.message-box',slideRight);
 ScrollReveal().reveal('.fact-card',{duration: 2000});
