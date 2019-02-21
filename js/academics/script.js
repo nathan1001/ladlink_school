@@ -1,21 +1,5 @@
 
 
-// var div = document.getElementById("ha");
-
-// div.onclick = function(){
-//     console.log('working');
-// }
-//console.log(something);
-
-// //something.style.cursor = 'pointer';
-// something.onclick = function() {
-//    console.log('switching between schools');
-// };
-
-function doSomething(){
-    console.log('hahahaha');
-    document.getElementById('schoolName').innerHTML="changed";
-}
 
 function schoolClick(school){
     let section;
@@ -40,10 +24,7 @@ function schoolClick(school){
         document.getElementById('primary').style.display='none';
         document.getElementById('jhs').style.display='block';
     }
-    $("."+school+"-card").click(function() {
-        $('html,body').animate({
-            scrollTop: $("section."+school+"-section").offset().top},
-            'slow');
-    });
 }
+
+
 
