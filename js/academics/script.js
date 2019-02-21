@@ -40,4 +40,10 @@ function schoolClick(school){
         document.getElementById('primary').style.display='none';
         document.getElementById('jhs').style.display='block';
     }
+    $(function() {
+        $('.'+ school+'-card').click(function() {
+          $('html, body').animate({scrollTop: $('section.school').offset().top }, 'slow');
+          return false;
+        });
+          });
 }

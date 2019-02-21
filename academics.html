@@ -11,7 +11,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css" />
 		
 		<!-- Custom CSS -->
-        <link rel="stylesheet" href="css/custom.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
 		<!-- UIkit JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
@@ -94,7 +96,7 @@
 		<section class="uk-section uk-padding-remove school-menu-section" >
 			<div class=" uk-text-left">
 				
-				<div class="school-menu-card">
+				<div class="school-menu-card" onclick="schoolClick('creche')" id="creche-card">
 					<div class="uk-padding ">
 						<div class="uk-text school-menu-text-title">Crèche</div>
 						<p class="uk-text school-menu-text-body">State Certified Preschool</p>
@@ -112,7 +114,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="school-menu-card">
+				<div class="school-menu-card" onclick="schoolClick('preschool')" id="preschool-card">
 					<div class="uk-padding ">
 						<div class="uk-text school-menu-text-title">Nursery, KG1, KG2</div>
 						<p class="uk-text school-menu-text-body">State Certified Preschool</p>
@@ -130,7 +132,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="school-menu-card">
+				<div class="school-menu-card" onclick="schoolClick('primaryschool')" id="primaryschool-card">
 					<div class="uk-padding ">
 						<div class="uk-text school-menu-text-title">Lower & Upper Primary</div>
 						<p class="uk-text school-menu-text-body">GES certified curriculum</p>
@@ -148,7 +150,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="school-menu-card" style="border-right: none">
+				<div class="school-menu-card" style="border-right: none" onclick="schoolClick('jhs')" id="jhs-card">
 					<div class="uk-padding ">
 						<div class="uk-text school-menu-text-title">Junior high</div>
 						<p class="uk-text school-menu-text-body">Basic Education Certificate Exams</p>
@@ -172,7 +174,7 @@
 		<!--/SCHOOL MENU-->
 		<!--SCHOOL INTRODUCTION-->
 		<!-- CRECHE SECTION -->
-		<section id ='creche' style="display:block">
+		<section id ='creche' style="display:block" >
 		<!-- PUT style "display: none" here		-->	
 		<section class="uk-section uk-padding-remove uk-margin-large-top" >
 				<div class="uk-text page-heading uk-text-large uk-text-capitalize uk-margin-large-left splash-burgundy splash-charter section-title" >Créche</div>
@@ -224,7 +226,7 @@
 
 
 	<!-- PRESCHOOL SECTION -->
-	<section id ='preschool' style="display:none">
+	<section id ='preschool' style="display:none" >
 		<!-- PUT style "display: none" here		-->	
 		<section class="uk-section uk-padding-remove uk-margin-large-top" >
 				<div class="uk-text page-heading uk-text-large uk-text-capitalize uk-margin-large-left splash-burgundy splash-charter section-title" >Preschool</div>
@@ -276,7 +278,7 @@
 
 
 	<!-- PRIMARY SECTION -->
-	<section id ='primary' style="display:none">
+	<section id ='primary' style="display:none" >
 		<!-- PUT style "display: none" here		-->	
 		<section class="uk-section uk-padding-remove uk-margin-large-top" >
 				<div class="uk-text page-heading uk-text-large uk-text-capitalize uk-margin-large-left splash-burgundy splash-charter section-title" >Primary</div>
@@ -327,7 +329,7 @@
 
 
 	<!-- JHS SECTION -->
-	<section id ='jhs' style="display:none">
+	<section id ='jhs' style="display:none" >
 		<!-- PUT style "display: none" here		-->	
 		<section class="uk-section uk-padding-remove uk-margin-large-top" >
 				<div class="uk-text page-heading uk-text-large uk-text-capitalize uk-margin-large-left splash-burgundy splash-charter section-title" >Junior High School</div>
