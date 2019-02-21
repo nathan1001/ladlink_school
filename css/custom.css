@@ -119,9 +119,10 @@ body {
 
 .school-menu-text-body {
   height: 50px; }
-  @media (min-width: 640px) and (max-width: 1200px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) {
     .school-menu-text-body {
-      font-size: 0.8em; } }
+      font-size: 0.8em;
+      height: auto; } }
 
 .school-menu-card {
   vertical-align: top;
@@ -134,12 +135,32 @@ body {
       width: 100%;
       border-bottom: 1px solid #F3F1F2;
       height: auto; } }
+  @media (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .school-menu-card {
+      width: 50%;
+      border-bottom: 1px solid #F3F1F2;
+      height: auto; } }
 
 .school-menu-card:hover {
   border-right: none;
   color: white !important;
   background: none;
   animation: menu-hover-reveal 1s forwards; }
+
+.uk-active > .activate-card {
+  border-right: none;
+  color: white !important;
+  background: none;
+  animation: menu-hover-reveal 1s forwards; }
+
+.uk-active > .activate-card .school-menu-text-age > .splash-burgundy {
+  color: white; }
+
+.uk-active > .activate-card .school-menu-text-age > .superscript {
+  border-bottom: 1px solid white; }
+
+.uk-active > .activate-card .menu-arrow-icon > .menu-svg-arrow path, .uk-active > .activate-card .menu-arrow-icon > .academics-menu-svg-arrow path {
+  fill: white !important; }
 
 .school-menu-card:hover > .uk-padding .school-menu-text-age > .splash-burgundy {
   color: white; }
@@ -170,10 +191,10 @@ body {
   height: 100px;
   font-weight: 600;
   font-size: 1.7em; }
-  @media (min-width: 640px) and (max-width: 1200px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) {
     .school-menu-text-title {
       font-size: 1.5em;
-      height: 70px; } }
+      height: auto; } }
 
 .menu-arrow-icon {
   margin: 40px 0 20px 0; }
@@ -184,7 +205,7 @@ body {
 .school-age-number {
   font-weight: 600;
   font-size: 3rem; }
-  @media (min-width: 640px) and (max-width: 1200px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) {
     .school-age-number {
       font-size: 2.5rem; } }
 
@@ -194,7 +215,7 @@ body {
 .superscript {
   vertical-align: 100%;
   border-bottom: 1px solid #9B2437; }
-  @media (min-width: 640px) and (max-width: 1200px) {
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) {
     .superscript {
       font-size: 0.7em; } }
 
@@ -210,13 +231,16 @@ body {
 .menu-svg-arrow, .academics-menu-svg-arrow {
   width: 40px;
   height: auto; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) {
+    .menu-svg-arrow, .academics-menu-svg-arrow {
+      width: 30px; } }
 
 .text-body {
   font-size: 0.9em;
   line-height: 1.6; }
   @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .text-body {
-      font-size: 0.9em; } }
+      font-size: 0.8em; } }
   @media (min-width: 640px) and (max-width: 1200px) {
     .text-body {
       font-size: 0.8em; } }
@@ -249,11 +273,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1; }
-  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+  @media only screen and (max-width: 640px) {
     .home-head {
       margin-left: 0;
       margin-top: 0;
       width: auto;
+      position: static; } }
+  @media (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .home-head {
+      width: 100vw;
+      margin: 0;
       position: static; } }
   @media (min-width: 640px) and (max-width: 1200px) {
     .home-head {
@@ -374,6 +403,9 @@ body {
   display: inline-block;
   vertical-align: bottom;
   width: calc(100% - 120px); }
+  @media only screen and (max-width: 640px) {
+    .fact-title {
+      font-size: 1em; } }
   @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .fact-title {
       padding-top: 15px; } }
@@ -392,6 +424,7 @@ body {
   @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .intro-section-container {
       width: 100vw;
+      min-height: auto;
       margin-top: 0;
       position: static;
       height: auto;
@@ -475,22 +508,20 @@ body {
   width: 200px; }
 
 .admission-cta-button {
-  position: absolute;
-  bottom: 0;
-  transform: translate(-50%, 50%);
-  margin-left: 35%; }
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: -29px;
+  z-index: 1; }
 
 .admission-cta-button-inner {
-  width: 50vw;
-  height: 7vh;
+  transform: translatex(-50%);
+  margin-left: 50%;
   color: white;
+  padding: 10px 0px;
   background: #9B2437;
-  padding-top: 10px;
-  border: none; }
-  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
-    .admission-cta-button-inner {
-      width: auto;
-      height: auto; } }
+  border: none;
+  width: 350px; }
 
 /*Campus Life*/
 .campus-life-calendar {
@@ -499,6 +530,10 @@ body {
   position: relative;
   width: 30%;
   margin-top: -100px; }
+
+.contact-section {
+  position: relative;
+  margin-top: -29px; }
 
 /*Header*/
 header {
