@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
+   <head>
         <title>Ladlink School</title>
-        <link rel="icon" href="img/favicon.ico">
+        <link rel="icon" href="images/ladlink-favicon.ico">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
         <!-- UIkit CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css" />
 		
@@ -16,6 +14,10 @@
 		<!-- UIkit JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+		<!-- JQuery -->
+		<script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<!-- Scroll Reveal	-->
+		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 	<body>
 		<!--HEADER-->
@@ -31,7 +33,7 @@
 							<li><a class="highlight" href="admissions.html">Admissions</a></li>
 							<li><a class="highlight" href="academics.html">Programmes</a></li>
 							<li><a class="highlight" href="campus_life.html">Campus Life</a></li>
-							<li><a class="highlight" href="#">Parents</a></li>
+							
 							<li><a class="highlight" href="#">Contact</a></li>
 							<li><a  class="intro-section-button uk-button fill-burgundy splash-white">Apply Now</a></li>
 							
@@ -260,13 +262,36 @@
 		</section>
 		<!--/NEWS AREA-->
 		<!--FOOTER-->
-		<section class="fill-burgundy" style="height: 30vh;">
-			
+		<section class=" fill-burgundy" style="height: auto; min-height: 30vh;">
+			<div class="footer-logo-container section-width">
+				<div class="footer-logo-div">
+					<a href="http://ladlinkschool.com"><img class="footer-logo-white" src="images/ladlink-logo.png" alt="LADLINK LOGO"/></a>
+					<span class="footer-school-title">Ladlink School</span>
+				</div>
+				<div class="footer-menu">
+					<div class="footer-location">
+						<div class="footer-menu-items" style="padding: 0px; border: none;">
+							11300 Falls Road Lutherville, MD 21093
+							<br>+233 410.252.3366
+						</div>
+					</div>
+					<div class="footer-site-map">
+						<div class="footer-menu-items"><a class="footer-link" href="index.html">Home</a></div>
+						<div class="footer-menu-items"><a class="footer-link" href="about.html">About</a></div>
+						<div class="footer-menu-items"><a class="footer-link"  href="admissions.html">Admissions</a></div>
+						<div class="footer-menu-items"><a class="footer-link"  href="academics.html">Programmes</a></div>
+						<div class="footer-menu-items"><a  class="footer-link" href="campus_life.html">Campus Life</a></div>
+						<div class="footer-menu-items" style="border: none;"><a class="footer-link"  href="#">Contact</a></div>
+					</div>
+					
+				</div>
+			</div>
 		</section>
 		<!--/FOOTER-->
 		
 		
 		
 	</body>
-	
+	<!-- Master  JS -->
+	<script src="js/logic.js"></script>
 </html>

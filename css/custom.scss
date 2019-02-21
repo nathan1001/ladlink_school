@@ -1,4 +1,5 @@
-$tablet: "(min-width: 640px) and (max-width: 1200px)";//" and (orientation: landscape)";
+$tablet: "(min-width: 640px) and (max-width: 1200px)";
+//" and (orientation: landscape)";
 $tablet-portrait: "(min-width: 640px) and (max-width: 1200px) and (orientation: portrait)";
 $phone: "only screen and (max-width: 640px)";
 $burgundy: #9B2437;
@@ -137,8 +138,9 @@ body{
 }
 .school-menu-text-body{
 	height: 50px;
-		@media #{$tablet}{
+		@media #{$phone,$tablet}{
 			font-size: 0.8em;
+			height: auto;
 		}
 }
 .school-menu-card{
@@ -152,6 +154,11 @@ body{
 		border-bottom: 1px solid #F3F1F2;
 		height: auto;
 	}
+	@media #{$tablet-portrait}{
+		width: 50%;
+		border-bottom: 1px solid #F3F1F2;
+		height: auto;
+	}
 }
 .school-menu-card:hover {
 //	background-color: $burgundy;
@@ -159,6 +166,21 @@ body{
 	color: white !important;
 	background: none;
 	animation: menu-hover-reveal 1s forwards;
+}
+.uk-active> .activate-card{
+	border-right: none;
+	color: white !important;
+	background: none;
+	animation: menu-hover-reveal 1s forwards;
+}
+.uk-active > .activate-card .school-menu-text-age > .splash-burgundy{
+	color:white;
+}
+.uk-active > .activate-card .school-menu-text-age > .superscript{
+	border-bottom: 1px solid white;
+}
+.uk-active > .activate-card .menu-arrow-icon > .menu-svg-arrow  path, .uk-active > .activate-card .menu-arrow-icon > .academics-menu-svg-arrow  path {
+	fill: white !important;
 }
 .school-menu-card:hover > .uk-padding .school-menu-text-age > .splash-burgundy{
 	color:white;
@@ -189,9 +211,9 @@ body{
 	height: 100px;
 	font-weight: 600;
 	font-size: 1.7em;
-		@media #{$tablet}{
+		@media #{$phone, $tablet}{
 		font-size: 1.5em;
-			height: 70px;
+			height: auto;
 	}
 }
 .menu-arrow-icon{
@@ -206,7 +228,7 @@ body{
 .school-age-number{
 	font-weight: 600;
 	font-size: 3rem;
-		@media #{$tablet}{
+		@media #{$phone,$tablet}{
 			font-size: 2.5rem;
 		}
 }
@@ -216,7 +238,7 @@ body{
 .superscript{
 	vertical-align: 100%;
 	border-bottom: 1px solid $burgundy;
-		@media #{$tablet}{
+		@media #{$phone,$tablet}{
 			font-size: 0.7em;
 		}
 }
@@ -233,12 +255,15 @@ body{
 .menu-svg-arrow, .academics-menu-svg-arrow{
 	width: 40px;
 	height: auto;
+	@media #{$phone,$tablet}{
+			width: 30px;
+		}
 }
 .text-body{
 	font-size: 0.9em;
 	line-height: 1.6;
 	@media #{$phone, $tablet-portrait}{
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 	@media #{$tablet}{
 		font-size: 0.8em;
@@ -272,10 +297,15 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 	z-index: 1;
-	@media #{$phone, $tablet-portrait}{
+	@media #{$phone}{
 		margin-left: 0;
 		margin-top: 0;
 		width: auto;
+		position: static;
+	}
+	@media #{$tablet-portrait}{
+		width: 100vw;
+		margin: 0;
 		position: static;
 	}
 	@media #{$tablet}{
@@ -402,6 +432,9 @@ body{
 	display: inline-block;
 	vertical-align: bottom;
 	width: calc(100% - 120px);
+	@media #{$phone}{
+		font-size: 1em;
+	}
 	@media #{$phone, $tablet-portrait}{
 		padding-top: 15px;
 	}
@@ -419,6 +452,7 @@ body{
     left: 0;
 	@media #{$phone, $tablet-portrait}{
 		width: 100vw;
+		min-height: auto;
 		margin-top: 0;
 		position: static;
 		height: auto;
@@ -511,21 +545,23 @@ body{
 	width: 200px;
 }
 .admission-cta-button{
-	position: absolute;
-    bottom: 0;
-    transform: translate(-50%,50%);
-    margin-left: 35%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -29px;
+	z-index: 1;
+    
 }
 .admission-cta-button-inner{
-	width: 50vw;
-    height: 7vh;
-	color: white;
-	background: $burgundy;
-	padding-top: 10px;
+	transform: translatex(-50%);
+    margin-left: 50%;
+    color: white;
+	padding: 10px 0px;
+    background: $burgundy;
     border: none;
+    width: 350px;
 	@media #{$phone, $tablet-portrait}{
-		width: auto;
-		height: auto;
+
 	}
 }
 /*Campus Life*/
@@ -536,7 +572,10 @@ body{
     width: 30%;
 	margin-top: -100px;
 }
-
+.contact-section{
+	position: relative; 
+	margin-top: -29px;
+}
 /*Header*/
 
 header {
@@ -771,4 +810,60 @@ header {
 }
 .highlight:hover:before {
   background-position: -99.99% 0;
+}
+
+.footer-logo-container{
+	
+	padding: 20px;
+	padding-left: 0px;
+}
+.footer-logo-div{
+    margin: auto;
+}
+.footer-logo-white{
+	    width: 150px !important;
+}
+.footer-school-title{
+//	    width: 100%;
+	vertical-align: -webkit-baseline-middle;
+	padding-bottom: 10px;
+    font-size: 1.5rem;
+	color: white
+}
+.footer-menu-items{
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #cccccc52;
+	
+}
+.footer-link:hover{
+	color: white;
+	font-weight: 500;
+}
+.footer-menu{
+	font-size: 1em;
+	margin-top: 30px;
+	width: 100%;
+	color: white;
+	@media #{$phone, $tablet-portrait}{
+		font-size: 0.8em;
+	}
+}
+.footer-location{
+	display: inline-block;
+	width: 40%;	
+	vertical-align: top;
+	@media #{$phone, $tablet-portrait}{
+		width: 100%;
+	}
+}
+
+.footer-site-map{
+	display: inline-block;
+	width: 59%;
+	vertical-align: top;
+	@media #{$phone, $tablet-portrait}{
+		margin-top: 20px;
+		width: 100%;
+	}
 }
