@@ -712,4 +712,55 @@ header {
 .highlight:hover:before {
   background-position: -99.99% 0; }
 
+.footer-logo-container {
+  padding: 20px;
+  padding-left: 0px; }
+
+.footer-logo-div {
+  margin: auto; }
+
+.footer-logo-white {
+  width: 150px !important; }
+
+.footer-school-title {
+  vertical-align: -webkit-baseline-middle;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  color: white; }
+
+.footer-menu-items {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid #cccccc52; }
+
+.footer-link:hover {
+  color: white;
+  font-weight: 500; }
+
+.footer-menu {
+  font-size: 1em;
+  margin-top: 30px;
+  width: 100%;
+  color: white; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .footer-menu {
+      font-size: 0.8em; } }
+
+.footer-location {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .footer-location {
+      width: 100%; } }
+
+.footer-site-map {
+  display: inline-block;
+  width: 59%;
+  vertical-align: top; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .footer-site-map {
+      margin-top: 20px;
+      width: 100%; } }
+
 /*# sourceMappingURL=custom.css.map */
