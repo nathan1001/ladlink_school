@@ -59,7 +59,7 @@ body {
   margin: auto; }
   @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .section-width {
-      width: 80vw; } }
+      width: 90vw; } }
   @media (min-width: 640px) and (max-width: 1200px) {
     .section-width {
       width: 85vw; } }
@@ -529,9 +529,10 @@ body {
   padding-left: 40px; }
   @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .mission-statement {
-      font-size: 1.1em;
+      font-size: 1em;
       width: auto;
-      text-align: left; } }
+      text-align: left;
+      padding-left: 20px; } }
 
 @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
   .mission-statement-icon {
@@ -556,6 +557,11 @@ body {
   background: #9B2437;
   border: none;
   width: 350px; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .admission-cta-button-inner {
+      width: 100%;
+      margin-left: 0px;
+      transform: translateX(0%); } }
 
 /*Campus Life*/
 .campus-life-calendar {
@@ -872,7 +878,8 @@ header {
       position: static;
       height: 35vh;
       width: 100%;
-      margin-top: 0px; } }
+      margin-top: 0px;
+      display: none; } }
   @media (min-width: 640px) and (max-width: 1200px), only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .contact-section-hero {
       font-size: 0.8em; } }
@@ -884,6 +891,21 @@ header {
   font-size: 0.9em; }
 
 .contact-page-section {
-  margin-top: 50px; }
+  margin-top: 0px; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .contact-page-section {
+      margin-top: 50px; } }
+
+@media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+  .mobile-padding {
+    padding: 15px; } }
+
+@media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+  .fact-card > .text-body, .fact-header > .mission-statement {
+    margin: 0px !important; } }
+
+@media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+  .mobile-padding-remove {
+    padding: 0; } }
 
 /*# sourceMappingURL=custom.css.map */

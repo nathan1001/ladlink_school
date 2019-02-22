@@ -76,7 +76,7 @@ body{
 	width: 70vw;
 	margin: auto;
 	@media #{$phone, $tablet-portrait}{
-		width: 80vw;
+		width: 90vw;
 	}
 	@media #{$tablet}{
 		width: 85vw;
@@ -559,9 +559,10 @@ body{
 	border-left: 3px solid rgb(255, 232, 236);
 	padding-left: 40px;
 	@media #{$phone, $tablet-portrait}{
-		font-size: 1.1em;
+		font-size: 1em;
 		width: auto;
 		text-align: left;
+		padding-left: 20px;
 	}
 }
 .mission-statement-icon{
@@ -590,7 +591,9 @@ body{
     border: none;
     width: 350px;
 	@media #{$phone, $tablet-portrait}{
-
+		width: 100%;
+		margin-left: 0px;
+		transform: translateX(0%);
 	}
 }
 /*Campus Life*/
@@ -937,6 +940,7 @@ header {
 		height: 35vh;
 		width: 100%;
 		margin-top: 0px;
+		display: none;
 	}
 	@media #{$tablet, $phone, $tablet-portrait}{
 		font-size: 0.8em;
@@ -950,5 +954,23 @@ header {
 	font-size: 0.9em;
 }
 .contact-page-section{
-	margin-top: 50px;
+	@media #{ $phone, $tablet-portrait}{
+		margin-top: 50px;
+	}
+	margin-top: 0px;
+}
+.mobile-padding{
+		@media #{$phone, $tablet-portrait}{
+		padding: 15px;
+	}
+}
+.fact-card > .text-body, .fact-header > .mission-statement{
+	@media #{$phone, $tablet-portrait}{
+		margin: 0px !important;
+	}
+}
+.mobile-padding-remove{
+		@media #{$phone, $tablet-portrait}{
+		padding: 0;
+	}
 }
