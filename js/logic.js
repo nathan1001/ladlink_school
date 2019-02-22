@@ -4,6 +4,12 @@
 	 opacity: null,
 	 mobile: false
  };
+ var slideDown = {
+	 distance: '150%',
+	 origin: 'top',
+	 opacity: null,
+	 mobile: false
+ };
  var slideLeft = {
 	 distance: '150%',
 	 origin: 'left',
@@ -23,6 +29,9 @@ ScrollReveal().reveal('.intro-section-container',slideLeft);
 ScrollReveal().reveal('.page-hero',slideRight);
 ScrollReveal().reveal('.contact-page-hero',slideRight);
 ScrollReveal().reveal('.page-heading',slideUp);
+ScrollReveal().reveal('.fly-from-top',slideRight);
+ScrollReveal().reveal('.fly-from-down',slideLeft);
+ScrollReveal().reveal('.contact-section-hero',slideRight);
 ScrollReveal().reveal('.message-box',slideRight);
 ScrollReveal().reveal('.fact-card',{duration: 2000});
 ScrollReveal().reveal('.news-card',{duration: 2000});

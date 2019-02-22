@@ -64,7 +64,7 @@ body{
 */
 }
 .margin-from-title{
-	margin-top: 150px;
+	margin-top: 100px;
 	@media #{$phone, $tablet-portrait}{
 		margin-top: 50px;
 	}
@@ -504,8 +504,9 @@ body{
 	background-color: white;
 	animation: button-hover-reveal 1s forwards;
 }
-.admission-cta-button:hover{
+.admission-cta-button-inner:hover{
 	border: 1px solid $burgundy;
+	background: white;
 	color: $burgundy;
 	animation: button-hover-reveal 1s forwards;
 }
@@ -554,7 +555,9 @@ body{
 .mission-statement{
 	vertical-align: top;
 	width: calc(100% - 120px);
-	font-size: 1em;
+	font-size: 1.1em;
+	border-left: 3px solid rgb(255, 232, 236);
+	padding-left: 40px;
 	@media #{$phone, $tablet-portrait}{
 		font-size: 1.1em;
 		width: auto;
@@ -904,6 +907,31 @@ header {
     z-index: 1;
     margin-top: 100px;
     margin-right: 100px;
+	@media #{$phone, $tablet-portrait}{
+		position: static;
+		height: 35vh;
+		width: 100%;
+		margin-top: 0px;
+	}
+	@media #{$tablet, $phone, $tablet-portrait}{
+		font-size: 0.8em;
+	}
+	@media #{$tablet}{
+		margin-right: 0px;
+	}
+	
+}
+.contact-section-hero{
+    background-size: cover;
+    height: 50vh;
+    width: 45vw;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 100px;
 	@media #{$phone, $tablet-portrait}{
 		position: static;
 		height: 35vh;
