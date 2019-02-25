@@ -43,3 +43,7 @@ jQuery(document).ready(function($) {
 		$('.mobile-menu-wrap').toggleClass('menu-closed').toggleClass('menu-open');	
 	});
 });
+
+function scrollApply(size){
+	window.scrollBy(0, Number(size));
+}
