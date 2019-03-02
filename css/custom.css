@@ -389,7 +389,7 @@ body {
   height: auto; }
   @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
     .svg-icon {
-      width: 55px; } }
+      width: 45px; } }
 
 .fact-card {
   display: inline-block;
@@ -913,5 +913,19 @@ header {
 @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
   .mobile-padding-remove {
     padding: 0; } }
+
+.svg-card {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(69vw / 3);
+  margin: 0 0 40px 0; }
+  @media only screen and (max-width: 640px), (min-width: 640px) and (max-width: 1200px) and (orientation: portrait) {
+    .svg-card {
+      width: 100%;
+      margin-top: 15px;
+      margin: 0 0 10px 0; } }
+  @media (min-width: 640px) and (max-width: 1200px) and (orientation: landscape) {
+    .svg-card {
+      width: calc(98% / 3); } }
 
 /*# sourceMappingURL=custom.css.map */
