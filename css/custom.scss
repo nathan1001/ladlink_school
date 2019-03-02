@@ -411,7 +411,7 @@ body{
 	width: 70px;
 	height: auto;
 	@media #{$phone, $tablet-portrait}{
-		width: 55px;
+		width: 45px;
 	}
 }
 .fact-card{
@@ -979,5 +979,20 @@ header {
 .mobile-padding-remove{
 		@media #{$phone, $tablet-portrait}{
 		padding: 0;
+	}
+}
+.svg-card{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(69vw / 3);
+	margin: 0 0 40px 0;
+	@media #{$phone, $tablet-portrait}{
+		width: 100%;
+		margin-top: 15px;
+		margin: 0 0 10px 0;
+	}
+	@media #{$tablet}{
+		width: calc(98% / 3);
+//		margin-top: 15px;
 	}
 }
