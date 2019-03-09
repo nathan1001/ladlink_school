@@ -38,7 +38,7 @@
 						<div>
 						<h3 class="uk-text-left column-title"><span><?=$_enquiries_call_title?></span></h3>
 							<div class="uk-child-width-1-2@m uk-margin-top" uk-grid>
-							<?foreach( $__contact_person as $object ){?>
+							<?foreach( $_contact_person as $object ){?>
 							<div>
 									<p class="text-body"><?= $object['_contact_person_role']?><br>
 									<span class="splash-burgundy"><?= $object['_contact_person_name']?></span>
