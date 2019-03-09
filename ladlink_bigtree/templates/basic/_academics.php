@@ -7,22 +7,22 @@
 
 	<!--INTRODUCTION-->
 	<section class="uk-section uk-padding-remove uk-margin-large-top">
-		<div class="uk-text page-heading uk-text-large uk-text-capitalize uk-margin-large-left splash-burgundy splash-charter section-title"><?=$_academics_title?></div>
-		<div class="page-hero" style="background-image: url('<?=$_main_intro_image?>')"></div>
+		<div class="uk-text page-heading uk-text-large uk-text-capitalize uk-margin-large-left splash-burgundy splash-charter section-title">Academics</div>
+		<div class="page-hero" style="background-image: url(images/IMG_0874-min.jpg)"></div>
 		<div class="intro-section-container spring-wood-bg">
 			<div class="intro-text-container">
 				<div class="uk-padding-large uk-text uk-text-left mobile-padding">
-				<?foreach( $_school_menu_card as $object ){?>
-					<h3 class="uk-text-left column-title"><span><?= $object['_title']?></span></h3>
-					<p class="uk-margin-large-top text-body"><?= $object['_description']?></p>
-					<?}?>	
+					<h3 class="uk-text-left column-title"><span>This is Ladlink</span></h3>
+					<p class="uk-margin-large-top text-body">
+						We use the Ghana Education Service (GES) curriculum as our guide in all levels. However, we encourage our
+						teachers to be innovative in their presentation of lessons hence the blend of the theoretical with the practical
+						for our pupils to have a deeper and solid understanding. We encourage this method of learning to enhance our
+						pupils to be critical thinkers and possible problem solvers.
+					</p>
 					<p uk-margin>
-					<?foreach( $_apply_button as $object ){?>
-						<a href="<?= $object['_button_link']?>"><button class="intro-section-button uk-button uk-button-large fill-burgundy splash-white"><?= $object['_title']?></button></a>
-						<?}?>
-						<?foreach( $_contact_button as $object ){?>	
-						<a href="<?= $object['_button_link']?>"><button class="intro-section-button uk-button transparent-button uk-button-large"><?= $object['_title']?></button></a>
-						<?}?>
+						<a href="http://ladlinkschool.com/contact.html"><button class="intro-section-button uk-button uk-button-large fill-burgundy splash-white">Contact</button></a>
+						<a href="http://ladlinkschool.com/admissions.html"><button class="intro-section-button uk-button transparent-button uk-button-large">Apply
+								Now</button></a>
 					</p>
 				</div>
 			</div>
@@ -34,14 +34,14 @@
 	<!--SCHOOL MENU-->
 	<div class="uk-text-left" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium toggle: > *"
 	 style="width: 100%;font-size: 0;">
-	 <?foreach( $_school_menu_card as $object ){?>	
+
 		<div class="school-menu-card">
 			<a class="card-link" href="#school_introduction">
 				<div class="uk-padding activate-card">
-					<div class="uk-text school-menu-text-title"><?= $object['_school_name']?></div>
-					<p class="uk-text school-menu-text-body"><?= $object['_school_description']?></p>
+					<div class="uk-text school-menu-text-title">Crèche</div>
+					<p class="uk-text school-menu-text-body">State Certified Preschool</p>
 					<div class="school-menu-text-age">
-						<div class=" school-age-number splash-burgundy"><?= $object['_school_age_range']?></div>
+						<div class=" school-age-number splash-burgundy">6mo-12</div>
 						<div class="superscript splash-burgundy">years old</div>
 					</div>
 					<div class="menu-arrow-icon">
@@ -59,9 +59,8 @@
 				</div>
 			</a>
 		</div>
-		<?}?>
 
-		<!-- <div class="school-menu-card">
+		<div class="school-menu-card">
 			<a class="card-link" href="#school_introduction">
 			<div class="uk-padding activate-card">
 				<div class="uk-text school-menu-text-title">Nursery, KG1, KG2</div>
@@ -133,7 +132,7 @@
 					</div>
 				</div>
 			</a>
-		</div> -->
+		</div>
 	</div>
 	<!--/SCHOOL MENU-->
 
@@ -198,7 +197,6 @@
 			<!--/SUBJECTS AREA-->
 
 		</li>
-		
 		<li>
 			<!--SCHOOL INTRODUCTION-->
 			<section class="uk-section uk-padding-remove uk-margin-large-top">
