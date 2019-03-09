@@ -2,26 +2,13 @@
 		<div class="hero-section uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider="center: true; autoplay: true;autoplay-interval:5000">
 
 			<ul class="uk-slider-items uk-child-width uk-grid uk-grid-match" uk-height-viewport=" offset-bottom: 30">
+			<?foreach( $_carousel as $object ){?>
 				<li >
 					<div class="uk-cover-container">
-						<img src="images/uniform.jpg" alt="" uk-cover>
+						<img src="<?= $object['_hero_image']?>" alt="" uk-cover>
 					</div>
 				</li>
-				<li>
-					<div class="uk-cover-container">
-						<img src="images/IMG_0077-min.jpg" alt="" uk-cover>
-					</div>
-				</li>
-				<li >
-					<div class="uk-cover-container">
-						<img src="images/science.jpg" alt="" uk-cover>
-					</div>
-				</li>
-				<li >
-					<div class="uk-cover-container">
-						<img src="images/kids_laughing.jpg" alt="" uk-cover>
-					</div>
-				</li>
+				<?}?>
 			</ul>
 
 			<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
