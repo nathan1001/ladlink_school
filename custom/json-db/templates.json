@@ -1,0 +1,1038 @@
+[
+    {
+        "id": "homepage",
+        "name": "Homepage",
+        "module": null,
+        "resources": [
+            {
+                "id": "hero_images",
+                "title": "hero",
+                "subtitle": "",
+                "type": "media-gallery",
+                "settings": null
+            },
+            {
+                "id": "school_menu_card",
+                "title": "school menu card",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "schooldepartment",
+                            "title": "school department",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "schooldescription",
+                            "title": "school description"
+                        },
+                        {
+                            "type": "text",
+                            "id": "schoolagerange",
+                            "title": "school age range"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "head_image",
+                "title": "headmistress image",
+                "subtitle": "",
+                "type": "image",
+                "settings": null
+            },
+            {
+                "id": "headmistress_card",
+                "title": "headmistress card",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title"
+                        },
+                        {
+                            "type": "html",
+                            "id": "messagebody",
+                            "title": "headmistress msg",
+                            "display_title": "on"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "calendar_event",
+                "title": "calendar event",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "date",
+                            "title": "date"
+                        },
+                        {
+                            "type": "text",
+                            "id": "event",
+                            "title": "calendar event",
+                            "display_title": "on"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ladlink_glance_one",
+                "title": "ladlink glance one",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "body",
+                            "title": "ladlink at a glance 1",
+                            "display_title": "on"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ladlink_glance_two",
+                "title": "ladlink glance two",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "body",
+                            "title": "ladlink at a glance 2",
+                            "display_title": "on"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "ladlink_glance_three",
+                "title": "ladlink glance three",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "body",
+                            "title": "ladlink at a glance 3",
+                            "display_title": "on"
+                        }
+                    ]
+                }
+            }
+        ],
+        "level": "0",
+        "routed": "",
+        "hooks": [],
+        "position": 4
+    },
+    {
+        "id": "about",
+        "name": "About",
+        "module": null,
+        "resources": [
+            {
+                "id": "about_main_image",
+                "title": "About main image",
+                "subtitle": "",
+                "type": "image",
+                "settings": null
+            },
+            {
+                "id": "message_from_head",
+                "title": "Message from head",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "html",
+                            "id": "body",
+                            "title": "body"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "apply_button",
+                "title": "Apply Button",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "text",
+                            "title": "text",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "contact_button",
+                "title": "Contact Button",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "text",
+                            "title": "text",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "mission_values_title",
+                "title": "Mission And Values",
+                "subtitle": "",
+                "type": "text",
+                "settings": null
+            },
+            {
+                "id": "mission_values_intro",
+                "title": "Mission And Values introduction",
+                "subtitle": "",
+                "type": "textarea",
+                "settings": null
+            },
+            {
+                "id": "values",
+                "title": "values",
+                "subtitle": "",
+                "type": "html",
+                "settings": null
+            },
+            {
+                "id": "management_title",
+                "title": "Management Title ",
+                "subtitle": "",
+                "type": "text",
+                "settings": null
+            },
+            {
+                "id": "management_entry",
+                "title": "Management Entry",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "image",
+                            "id": "management_photo",
+                            "title": "management_photo"
+                        },
+                        {
+                            "type": "text",
+                            "id": "management_name",
+                            "title": "management_name",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "management_role",
+                            "title": "management_role"
+                        },
+                        {
+                            "type": "text",
+                            "id": "animation",
+                            "title": "animation"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "admission_process",
+                "title": "Admission Process",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "image",
+                            "id": "background_image",
+                            "title": "background_image"
+                        },
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "description",
+                            "title": "description"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_text",
+                            "title": "button_text"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "contact_location",
+                "title": "Contact Location",
+                "subtitle": "",
+                "type": "text",
+                "settings": null
+            },
+            {
+                "id": "contact_image",
+                "title": "Contact Image",
+                "subtitle": "",
+                "type": "image",
+                "settings": null
+            },
+            {
+                "id": "contact_person",
+                "title": "Contact Person",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "role",
+                            "title": "role"
+                        },
+                        {
+                            "type": "text",
+                            "id": "name",
+                            "title": "name",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "email",
+                            "title": "email"
+                        },
+                        {
+                            "type": "text",
+                            "id": "phonenumber",
+                            "title": "phonenumber"
+                        }
+                    ]
+                }
+            }
+        ],
+        "level": "0",
+        "routed": "",
+        "hooks": [],
+        "position": 3
+    },
+    {
+        "id": "admissions",
+        "name": "Admissions",
+        "module": null,
+        "resources": [
+            {
+                "id": "admissions_title",
+                "title": "Admissions Title",
+                "subtitle": "",
+                "type": "text",
+                "settings": null
+            },
+            {
+                "id": "admissions_main_image",
+                "title": "Admissions Main Image",
+                "subtitle": "",
+                "type": "image",
+                "settings": null
+            },
+            {
+                "id": "message_from_head",
+                "title": "Message from head",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "html",
+                            "id": "subject"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "contact_button",
+                "title": "Contact Button",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "download_button",
+                "title": "Download Button",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "upload",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "admission_process_title",
+                "title": "Admission Process title",
+                "subtitle": "",
+                "type": "text",
+                "settings": null
+            },
+            {
+                "id": "admission_process_one",
+                "title": "Admission Process 1",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "html",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "text",
+                            "id": "note",
+                            "title": "note"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "download_form",
+                "title": "Download form",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "upload",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "admission_process_two",
+                "title": "Admission Process 2",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "html",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "text",
+                            "id": "note",
+                            "title": "note"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "admission_process_three",
+                "title": "Admission Process 3",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "html",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "text",
+                            "id": "note",
+                            "title": "note"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "orientation_related_info",
+                "title": "Orientation And Related Information",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "subject",
+                            "title": "subject"
+                        }
+                    ]
+                }
+            }
+        ],
+        "level": "0",
+        "routed": "",
+        "hooks": [],
+        "position": 2
+    },
+    {
+        "id": "contact",
+        "name": "Contact",
+        "module": "",
+        "resources": [
+            {
+                "id": "contact_title",
+                "type": "text",
+                "title": "Contact Title",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "contact_main_image",
+                "type": "image",
+                "title": "Contact Main Image",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "contact_introduction",
+                "type": "html",
+                "title": "Contact Introduction",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "contact_pobox",
+                "type": "html",
+                "title": "Contact PO Box",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "enquiries_title",
+                "type": "text",
+                "title": "Enquiries title",
+                "subtitle": "",
+                "settings": null
+            },
+            {
+                "id": "contact_person",
+                "type": "matrix",
+                "title": "Contact Person",
+                "subtitle": "",
+                "settings": {
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "name",
+                            "title": "name",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "email",
+                            "title": "email"
+                        },
+                        {
+                            "type": "text",
+                            "id": "role",
+                            "title": "role"
+                        },
+                        {
+                            "type": "text",
+                            "id": "phonenumber",
+                            "title": "phonenumber"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "email_send_button",
+                "type": "matrix",
+                "title": "Email send button",
+                "subtitle": "",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "emai",
+                            "title": "email"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "google_location",
+                "type": "matrix",
+                "title": "Google Location",
+                "subtitle": "",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "location_link",
+                            "title": "location_link"
+                        }
+                    ]
+                }
+            }
+        ],
+        "level": "0",
+        "routed": "",
+        "hooks": [],
+        "position": 1
+    },
+    {
+        "id": "Academics",
+        "name": "Academics",
+        "module": null,
+        "resources": [
+            {
+                "id": "academics_title",
+                "title": "Academics Title",
+                "subtitle": "",
+                "type": "text",
+                "settings": null
+            },
+            {
+                "id": "academics_introduction",
+                "title": "Academics Introduction",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "textarea",
+                            "id": "subject",
+                            "title": "subject"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "academics_main_image",
+                "title": "Academics Main Image",
+                "subtitle": "",
+                "type": "image",
+                "settings": null
+            },
+            {
+                "id": "apply_button",
+                "title": "Apply Button",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "contact_button",
+                "title": "Contact Button",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "button_link",
+                            "title": "button_link"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "creche_entry",
+                "title": "Creche Entry",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "description",
+                            "title": "description"
+                        },
+                        {
+                            "type": "text",
+                            "id": "age_range",
+                            "title": "age_range"
+                        },
+                        {
+                            "type": "text",
+                            "id": "introduction",
+                            "title": "introduction"
+                        },
+                        {
+                            "type": "text",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "image",
+                            "id": "school_image",
+                            "title": "school_image"
+                        },
+                        {
+                            "type": "html",
+                            "id": "curriculum_description",
+                            "title": "curriculum_description"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "nursery_entry",
+                "title": "KG1, KG2 and Nursery Entry",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "description",
+                            "title": "description"
+                        },
+                        {
+                            "type": "text",
+                            "id": "age_range",
+                            "title": "age_range"
+                        },
+                        {
+                            "type": "text",
+                            "id": "introduction",
+                            "title": "introduction"
+                        },
+                        {
+                            "type": "text",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "image",
+                            "id": "school_image",
+                            "title": "school_image"
+                        },
+                        {
+                            "type": "html",
+                            "id": "curriculum_description",
+                            "title": "curriculum_description"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "primary_entry",
+                "title": "Lower and Upper Primary Entry",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "description",
+                            "title": "description"
+                        },
+                        {
+                            "type": "text",
+                            "id": "age_range",
+                            "title": "age_range"
+                        },
+                        {
+                            "type": "text",
+                            "id": "introduction",
+                            "title": "introduction"
+                        },
+                        {
+                            "type": "text",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "image",
+                            "id": "school_image",
+                            "title": "school_image"
+                        },
+                        {
+                            "type": "html",
+                            "id": "curriculum_description",
+                            "title": "curriculum_description"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "jhs_entry",
+                "title": "JHS Entry ",
+                "subtitle": "",
+                "type": "matrix",
+                "settings": {
+                    "max": "1",
+                    "style": "list",
+                    "columns": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "title": "title",
+                            "display_title": "on"
+                        },
+                        {
+                            "type": "text",
+                            "id": "description",
+                            "title": "description"
+                        },
+                        {
+                            "type": "text",
+                            "id": "age_range",
+                            "title": "age_range"
+                        },
+                        {
+                            "type": "text",
+                            "id": "introduction",
+                            "title": "introduction"
+                        },
+                        {
+                            "type": "text",
+                            "id": "subject",
+                            "title": "subject"
+                        },
+                        {
+                            "type": "image",
+                            "id": "school_image",
+                            "title": "school_image"
+                        },
+                        {
+                            "type": "text",
+                            "id": "curriculum_description",
+                            "title": "curriculum_description"
+                        }
+                    ]
+                }
+            }
+        ],
+        "level": "0",
+        "routed": "",
+        "hooks": []
+    }
+]
